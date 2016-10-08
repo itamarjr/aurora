@@ -65,32 +65,7 @@ atom-text-editor .search-results .marker.current-result .region,
 //Comments
 .comment {
   color: @color1Comment;
-}
-.punctuation.definition.comment{
-  &.less{
-    color: @color1Comment;
-  }
-  &.python{
-    color: @color1Comment;
-  }
-  &.php{
-    color: @color1Comment;
-  }
-  &.js{
-    color: @color1Comment;
-  }
-  &.html{
-    color: @color1Comment;
-  }
-  &.c{
-    color: @color1Comment;
-  }
-  &.cpp{
-    color: @color1Comment;
-  }
-  &.css{
-    color: @color1Comment;
-  }
+  font-style: italic;
 }
 
 .keyword {
@@ -243,6 +218,9 @@ atom-text-editor .search-results .marker.current-result .region,
   &.name.tag {
     color: @color1Variable;
   }
+  &.gfm{
+    color: @color1String
+  }
 
   &.other.attribute-name {
     color: @color1Atribute;
@@ -318,6 +296,9 @@ atom-text-editor .search-results .marker.current-result .region,
   &.raw.inline {
     color: @green;
   }
+  &.underline.link.gfm {
+      color: @color1String;
+  }
 }
 
 .source.gfm .markup {
@@ -330,4 +311,26 @@ atom-text-editor .search-results .marker.current-result .region,
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
+}
+
+
+//Json
+.meta .meta .meta .meta .meta .meta.structure.dictionary.value .string {
+    color: @color1String;
+}
+.meta.structure.dictionary.value.json .string.quoted.double.json {
+    color: @color1Variable;
+}
+
+.meta.structure.dictionary.json .string.quoted.double.json {
+  color: @color1Atribute;
+}
+
+.meta .meta .meta .meta.structure.dictionary.value .string {
+  color: @purple;
+}
+
+
+.meta .meta.structure.dictionary.value .string {
+  color: @color1Variable;
 }
