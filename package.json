@@ -1,0 +1,15 @@
+{
+  "name": "aurora-theme",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Aurora theme, inspired in aurora boreal.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/itamarjr/aurora",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
