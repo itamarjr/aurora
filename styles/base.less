@@ -116,7 +116,7 @@ atom-text-editor .search-results .marker.current-result .region,
   color: @color1Variable;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@dark-gray, 10%);
   }
 
   &.parameter.function {
@@ -125,7 +125,6 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .invalid.illegal {
-  //background-color: @red;
   color: @color1String;
 }
 
@@ -137,12 +136,12 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @cyan;
 
     .source.ruby.embedded {
-      color: @orange;
+      color: @gray;
     }
   }
 
   &.other.link {
-    color: @red;
+    color: @dark-gray;
   }
 }
 
@@ -333,4 +332,18 @@ atom-text-editor[mini] .scroll-view,
 
 .meta .meta.structure.dictionary.value .string {
   color: @color1Variable;
+}
+
+//PHP
+.punctuation.definition{
+  &.variable.php{
+    color: @color1Variable;
+  }
+  &.parameters.php{
+    color:@color1Text;
+  }
+}
+.support.function.php{
+  color:@color1Atribute;
+
 }
