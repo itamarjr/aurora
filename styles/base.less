@@ -335,6 +335,14 @@ atom-text-editor[mini] .scroll-view,
 }
 
 //PHP
-.punctuation.definition.variable.php{
-  color: @color1Variable;
+.punctuation.definition{
+  &.variable.php{
+    color: @color1Variable;
+  }
+  &.parameters.php{
+    color:@color1Text;
+  }
+}
+.support.function.construct.output.php{
+  color:@color1Atribute;
 }
